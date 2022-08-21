@@ -120,6 +120,13 @@ html {
   display: none;
 }
 
+@keyframes fadeUp {
+  0% {
+    transform: translateY(5rem);
+    opacity: 0;
+  }
+}
+
 
 section {
   padding: 2rem 9%;
@@ -134,12 +141,17 @@ section {
   background: $white;
   display: none;
 
+  &.active {
+    display: block ;
+  }
+
   form {
     height: 7rem;
     border-bottom: .2rem solid $black ;
     width: 100%;
     display: flex;
     align-items: center;
+    animation: fadeUp .4s linear;
 
     input {
       height: 100%;
@@ -162,3 +174,6 @@ section {
     }
   }
 }
+
+
+// Search end
