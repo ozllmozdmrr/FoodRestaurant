@@ -270,13 +270,50 @@ section {
         color: #130f40;
         text-decoration: underline; }
 
-@media (max-width: 991px) {
-  html {
-    font-size: 55%; }
-  .header {
-    padding: 2rem; }
-  section {
-    padding: 2rem; } }
+.home {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+  gap: 2rem;
+  position: relative;
+  overflow: hidden; }
+  .home .content {
+    flex: 1 1 41rem; }
+    .home .content span {
+      font-size: 2rem;
+      color: #27ae60; }
+    .home .content h3 {
+      font-size: 4rem;
+      color: #27ae60;
+      padding-top: 1rem; }
+    .home .content p {
+      font-size: 1.4rem;
+      color: #666;
+      line-height: 2;
+      padding: 1rem 0; }
+  .home .image {
+    flex: 1 1 41rem;
+    margin: 2rem 0;
+    pointer-events: none; }
+    .home .image .home-img {
+      width: 100%;
+      margin-top: 5rem; }
+  .home .home-parallax-img {
+    position: absolute;
+    top: -14rem;
+    right: -6rem;
+    width: 75vw; }
+
+@media (max-width: 1440px) {
+  .home .home-parallax-img {
+    top: -9rem;
+    width: 80%; } }
+
+@media (max-width: 1024px) {
+  .home .home-parallax-img {
+    top: -10rem;
+    right: -4rem;
+    width: 132%; } }
 
 @media (max-width: 768px) {
   #menu-btn {
@@ -295,7 +332,11 @@ section {
     .header .navbar a {
       font-size: 2rem;
       margin: 2rem;
-      display: block; } }
+      display: block; }
+  .home .home-parallax-img {
+    top: -10rem;
+    right: -9rem;
+    width: 152%; } }
 
 @media (max-width: 450px) {
   html {
@@ -303,4 +344,22 @@ section {
   .shopping-cart-container .cart-total .box {
     text-align: center; }
     .shopping-cart-container .cart-total .box .btn {
-      width: 100%; } }
+      width: 100%; }
+  .home .home-parallax-img {
+    top: -4rem;
+    right: -6rem;
+    width: 152%; }
+  .home .content h3 {
+    font-size: 3rem; }
+  .home .content p {
+    font-size: 1.5rem; } }
+
+@media (max-width: 375px) {
+  .home .home-parallax-img {
+    top: 0rem;
+    right: -4rem;
+    width: 145%; }
+  .home .content h3 {
+    font-size: 3rem; }
+  .home .content p {
+    font-size: 1.5rem; } }
