@@ -311,7 +311,86 @@ section{
 }
 
 
+.login-form-container {
+  position: fixed;
+  top:8.5rem; left:0; right:0;
+  z-index: 1000;
+  height: calc(100vh - 8.5rem);
+  background: $white;
+  padding: 0 2rem;
+  display: none;
 
+  &.active {
+    display: block;
+  }
+
+  form {
+    margin: 2rem auto;
+    max-width: 40rem;
+    box-shadow: $box-shadow;
+    border: $border;
+    padding: 2rem;
+    border-radius: .5rem;
+    animation: fadeUp .4s linear;
+  }
+
+  h3 {
+    padding-bottom: 1rem;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: $black;
+  }
+
+  .box {
+    margin:.7rem 0;
+    border-radius: .5rem;
+    background: $light-bg;
+    padding: 1rem 1.2rem;
+    font-size: 1.6rem;
+    color: $black;
+    text-transform: none;
+    width: 100%;
+  }
+
+  .remember {
+    padding: 1rem 0;
+    display: flex;
+    align-items: center;
+    gap:.5rem;
+
+    label {
+      font-size: 1.5rem;
+      cursor: pointer;
+      color: $light-color;
+    }
+  }
+
+  .btn {
+    margin: 1rem 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  p {
+    padding-top: 1rem;
+    font-size: 1.5rem;
+    color: $light-color;
+
+    a {
+      color: $green;
+
+      &:hover {
+        color: $black;
+        text-decoration: underline;
+      }
+    }
+
+
+  }
+
+
+
+}
 
 
 
@@ -339,6 +418,37 @@ section{
 }
 
 
+@media(max-width:768px){
+
+  #menu-btn {
+    display: inline-block;
+  }
+  .header .navbar {
+    position:absolute;
+    top: 99%;
+    left: 0;
+    right: 0;
+    background: $white;
+    border-top: $border;
+    border-bottom: $border;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+
+
+    &.active {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+
+    }
+
+    a {
+      font-size: 2rem;
+      margin: 2rem;
+      display: block;
+    }
+
+  }
+}
+
+
 @media(max-width:450px){
   html {
     font-size: 50%;
@@ -352,8 +462,6 @@ section{
       .btn {
         width: 100%;
       }
-
-
     }
   }
 }

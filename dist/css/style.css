@@ -213,6 +213,63 @@ section {
         .shopping-cart-container .cart-total .box h3 span {
           color: #27ae60; }
 
+.login-form-container {
+  position: fixed;
+  top: 8.5rem;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  height: calc(100vh - 8.5rem);
+  background: #fff;
+  padding: 0 2rem;
+  display: none; }
+  .login-form-container.active {
+    display: block; }
+  .login-form-container form {
+    margin: 2rem auto;
+    max-width: 40rem;
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.05);
+    border: 0.1rem solid rgba(0, 0, 0, 0.2);
+    padding: 2rem;
+    border-radius: .5rem;
+    animation: fadeUp .4s linear; }
+  .login-form-container h3 {
+    padding-bottom: 1rem;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: #130f40; }
+  .login-form-container .box {
+    margin: .7rem 0;
+    border-radius: .5rem;
+    background: #f7f7f7;
+    padding: 1rem 1.2rem;
+    font-size: 1.6rem;
+    color: #130f40;
+    text-transform: none;
+    width: 100%; }
+  .login-form-container .remember {
+    padding: 1rem 0;
+    display: flex;
+    align-items: center;
+    gap: .5rem; }
+    .login-form-container .remember label {
+      font-size: 1.5rem;
+      cursor: pointer;
+      color: #666; }
+  .login-form-container .btn {
+    margin: 1rem 0;
+    width: 100%;
+    text-align: center; }
+  .login-form-container p {
+    padding-top: 1rem;
+    font-size: 1.5rem;
+    color: #666; }
+    .login-form-container p a {
+      color: #27ae60; }
+      .login-form-container p a:hover {
+        color: #130f40;
+        text-decoration: underline; }
+
 @media (max-width: 991px) {
   html {
     font-size: 55%; }
@@ -220,6 +277,25 @@ section {
     padding: 2rem; }
   section {
     padding: 2rem; } }
+
+@media (max-width: 768px) {
+  #menu-btn {
+    display: inline-block; }
+  .header .navbar {
+    position: absolute;
+    top: 99%;
+    left: 0;
+    right: 0;
+    background: #fff;
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
+    border-bottom: 0.1rem solid rgba(0, 0, 0, 0.2);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0); }
+    .header .navbar.active {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%); }
+    .header .navbar a {
+      font-size: 2rem;
+      margin: 2rem;
+      display: block; } }
 
 @media (max-width: 450px) {
   html {
