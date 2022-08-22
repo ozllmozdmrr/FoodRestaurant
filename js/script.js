@@ -51,7 +51,5 @@ document.querySelector('.home').onmousemove = (e) => {
 }
 
 document.querySelector('.home').onmouseleave = () => {
-
-
     document.querySelector('.home .home-parallax-img').style.transform = `translateX(0px) translateY(0px)`;
 }
