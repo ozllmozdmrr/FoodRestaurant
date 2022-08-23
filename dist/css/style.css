@@ -324,6 +324,49 @@ section {
       font-size: 1.8rem;
       color: #130f40; }
 
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+  background: #f7f7f7; }
+  .about .image {
+    flex: 1 1 40rem; }
+    .about .image img {
+      width: 100%; }
+  .about .content {
+    flex: 1 1 40rem; }
+    .about .content span {
+      font-family: 'Satisfy', cursive;
+      font-size: 3rem;
+      color: #27ae60; }
+    .about .content .title {
+      font-size: 3rem;
+      padding-top: .5rem;
+      color: #130f40; }
+    .about .content p {
+      padding: 1rem 0;
+      line-height: 2;
+      font-size: 1.4rem;
+      color: #666; }
+    .about .content .icons-container {
+      margin-top: 1rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem; }
+      .about .content .icons-container .icons {
+        flex: 1 1 30rem;
+        border-radius: .5rem;
+        background: #fff;
+        box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.05);
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        padding: 2rem; }
+      .about .content .icons-container h3 {
+        font-size: 1.7rem;
+        color: #130f40; }
+
 @media (max-width: 1440px) {
   .home .home-parallax-img {
     top: -9rem;

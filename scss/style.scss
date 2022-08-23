@@ -435,7 +435,7 @@ section {
 
   .image {
     flex: 1 1 41rem;
-    margin:2rem 0;
+    margin: 2rem 0;
     pointer-events: none;
 
     .home-img {
@@ -466,7 +466,7 @@ section {
     &:hover {
       background: $green;
 
-      h3{
+      h3 {
         color: $white;
       }
     }
@@ -479,8 +479,67 @@ section {
       font-size: 1.8rem;
       color: $black;
     }
+  }
+}
 
 
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+  background: $light-bg;
+
+  .image {
+    flex: 1 1 40rem;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .content {
+    flex: 1 1 40rem;
+
+    span {
+      @include font(3rem);
+    }
+
+    .title {
+      font-size: 3rem;
+      padding-top: .5rem;
+      color: $black;
+    }
+
+    p {
+      padding: 1rem 0;
+      line-height: 2;
+      font-size: 1.4rem;
+      color: $light-color;
+    }
+
+    .icons-container {
+      margin-top: 1rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+
+      .icons {
+        flex: 1 1 30rem;
+        border-radius: .5rem;
+        background: $white;
+        box-shadow: $box-shadow;
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        padding: 2rem;
+      }
+
+      h3 {
+        font-size: 1.7rem;
+        color: $black;
+      }
+    }
   }
 }
 
@@ -515,8 +574,8 @@ section {
 
 // media queries
 
-@media(max-width:1440px){
-  .home{
+@media(max-width:1440px) {
+  .home {
     .home-parallax-img {
       top: -9rem;
       width: 80%;
@@ -524,8 +583,8 @@ section {
   }
 }
 
-@media(max-width:1024px){
-  .home{
+@media(max-width:1024px) {
+  .home {
     .home-parallax-img {
       top: -10rem;
       right: -4rem;
@@ -587,7 +646,7 @@ section {
     }
   }
 
-  .home{
+  .home {
     .home-parallax-img {
       top: -10rem;
       right: -9rem;
@@ -595,7 +654,7 @@ section {
     }
   }
 
- 
+
 
 
 }
@@ -618,7 +677,7 @@ section {
   }
 
 
-  .home{
+  .home {
     .home-parallax-img {
       top: -4rem;
       right: -6rem;
@@ -626,12 +685,12 @@ section {
     }
   }
 
-  .home .content{
+  .home .content {
     h3 {
       font-size: 3rem;
     }
 
-    p{
+    p {
       font-size: 1.5rem;
     }
   }
@@ -648,15 +707,13 @@ section {
     }
   }
 
-  .home .content{
+  .home .content {
     h3 {
       font-size: 3rem;
     }
 
-    p{
+    p {
       font-size: 1.5rem;
     }
   }
 }
-
-
