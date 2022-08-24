@@ -602,8 +602,28 @@ section {
   }
 }
 
+.banner {
 
+  .row-banner {
+  background: url(/image/row-banner.png) no-repeat;
+  height: 45rem;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  }
 
+  .content {
+    position: absolute;
+    top: 50%;
+    left: 7%;
+    transform: translateY(-50%);
+
+    span {
+      @include font(4rem);
+      color: red;
+    }
+  }
+}
 
 
 

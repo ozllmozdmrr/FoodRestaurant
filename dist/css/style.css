@@ -401,6 +401,24 @@ section {
       .popular .box-container .box .content .stars span {
         color: #666; }
 
+.banner .row-banner {
+  background: url(/image/row-banner.png) no-repeat;
+  height: 45rem;
+  background-size: cover;
+  background-position: center;
+  position: relative; }
+
+.banner .content {
+  position: absolute;
+  top: 50%;
+  left: 7%;
+  transform: translateY(-50%); }
+  .banner .content span {
+    font-family: 'Satisfy', cursive;
+    font-size: 4rem;
+    color: #27ae60;
+    color: red; }
+
 @media (max-width: 1440px) {
   .home .home-parallax-img {
     top: -9rem;
