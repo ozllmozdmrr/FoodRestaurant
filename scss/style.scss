@@ -602,32 +602,90 @@ section {
   }
 }
 
-.banner {
+.banner{
 
-  .row-banner {
-  background: url(/image/row-banner.png) no-repeat;
-  height: 45rem;
-  background-size: cover;
-  background-position: center;
-  position: relative;
+  .row-banner{
+    background: url(/image/row-banner.png) no-repeat;
+    height: 45rem;
+    margin-bottom: 5rem;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+    .content{
+      position: absolute;
+      top:50%; left:7%;
+      transform: translateY(-50%);
+
+      span{
+        @include font(4rem);
+        color:$black;
+      }
+
+      h3{
+        font-size: 6rem;
+        color:red;
+        text-transform: uppercase;
+      }
+
+      p{
+        font-size: 2rem;
+        padding-bottom: 1rem;
+      }
+    }
   }
 
-  .content {
-    position: absolute;
-    top: 50%;
-    left: 7%;
-    transform: translateY(-50%);
+  .grid-banner{
+    @include grid(30rem);
 
-    span {
-      @include font(4rem);
-      color: red;
+    .grid{
+      position: relative;
+      border-radius: 1rem;
+      overflow:hidden;
+      height: 45rem;
+
+      &:hover img{
+        transform: scale(1.2);
+      }
+
+      img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+
+      .content{
+        position: absolute;
+        top:2rem;
+        padding:0 2rem;
+
+        &.center{
+          text-align: center;
+          width: 100%;
+
+          span{
+            color:$light-color;
+          }
+
+          h3{
+            color: $black;
+          }
+        }
+
+        span{
+          font-size: 2.5rem;
+          color:$white;
+        }
+        
+        h3{
+          font-size: 3rem;
+          color:$white;
+          padding-top: .5rem;
+        }
+      }
     }
   }
 }
-
-
-
-
 
 
 
