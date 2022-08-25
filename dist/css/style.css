@@ -483,7 +483,7 @@ section {
       padding-bottom: .5rem; }
     .menu .box-container .box .content .price {
       font-size: 1.8rem;
-      color: #130f40; }
+      color: #666; }
 
 @media (max-width: 1440px) {
   .home .home-parallax-img {
