@@ -805,6 +805,21 @@ section {
 
 
 
+.footer {
+  background: $light-bg;
+
+  .newsletter {
+    text-align: center;
+    margin-bottom: 2rem;
+
+    form {
+      width: 70rem;
+      margin: 1rem auto;
+      max-width: 70rem;
+    }
+  }
+}
+
 
 
 
