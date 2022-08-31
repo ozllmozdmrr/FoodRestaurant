@@ -1,5 +1,5 @@
 ﻿# Food-Restaurant
- I made a clone project to improve myself on Sass and javascript. 
+
 
 <h2 align="center">
   <img src="https://github.com/ozllmozdmrr/FoodRestaurant/blob/main/image/example.gif" alt="foodrestaurant" width="600px" />
